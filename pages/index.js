@@ -66,7 +66,7 @@ export default function PaginaInicial() {
             <Box
                 styleSheet={{
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    backgroundColor: appConfig.theme.colors.neutrals[500],
+                    backgroundColor: appConfig.theme.colors.neutrals[400],
                     backgroundImage: 'url(https://images2.alphacoders.com/740/thumb-1920-740460.png)',
                     backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
                 }}
