@@ -1,6 +1,6 @@
 import appConfig from '../config.json';
 import React from 'react';
-import { Box, Text } from '@skynexui/components';
+import { Box, Text, Image } from '@skynexui/components';
 
 function Title(props) {
     const Tag = props.tag || 'h1';
@@ -20,15 +20,23 @@ function Title(props) {
 
 export default function ErrorPage() {
     return (
-        <>
+        <>  
             <Box
                 styleSheet={{
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    backgroundColor: appConfig.theme.colors.neutrals[400],
-                    backgroundImage: 'url(https://madeirasgasometro.vteximg.com.br/arquivos/ids/170655-490-490/pp2324-azul-frances-square.jpg?v=636800397550230000)',
+                    display: 'flex', flexDirection: 'column',
+                    alignItems: 'center', justifyContent: 'center',
+                    backgroundColor: appConfig.theme.colors.neutrals['000'],
                     backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
                 }}
             >
+                <Image
+                    styleSheet={{
+                        // borderRadius: '50%',
+                        // marginBottom: '16px',
+                    }}
+
+                    src={`https://i.ytimg.com/vi/ZL7Ps9BUgbA/hqdefault.jpg`}
+                />
                 <Title tag="h1">404</Title>
                 <Text tag="h1" styleSheet={{ color: appConfig.theme.colors.primary[600] }}>Page not found</Text>
                 
