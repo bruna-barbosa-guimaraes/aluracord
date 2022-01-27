@@ -10,8 +10,8 @@ function Title(props) {
             <Tag>{props.children}</Tag>
             <style jsx>{`
                 ${Tag} {
-                    color: ${appConfig.theme.colors.primary['600']};
-                    font-size: 24px;
+                    color: ${appConfig.theme.colors.primary['500']};
+                    font-size: 2em;
                     padding: 10px;
                 }
             `}</style>
@@ -42,7 +42,7 @@ export default function PaginaInicial() {
             <Box
                 styleSheet={{
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    backgroundColor: appConfig.theme.colors.neutrals[400],
+                    backgroundColor: appConfig.theme.colors.primary[100],
                     backgroundImage: 'url(https://images2.alphacoders.com/740/thumb-1920-740460.png)',
                     backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
                 }}
@@ -58,9 +58,8 @@ export default function PaginaInicial() {
                     },
                     width: '100%', maxWidth: '700px',
                     borderRadius: '5px', padding: '32px', margin: '16px',
-                    boxShadow: '0 0 2em 0 black',
-                    backgroundColor: appConfig.theme.colors.neutrals[500],
-                    opacity: 0.8
+                    boxShadow: '0 0 3em 0 black',
+                    backgroundColor: appConfig.theme.colors.primary[900]
                 }}
             >
             {/* Formulário */}
@@ -78,10 +77,7 @@ export default function PaginaInicial() {
                     width: { xs: '100%', sm: '50%' }, textAlign: 'center', marginBottom: '32px',
                 }}
             >
-                <Title tag="h2">Boas vindas de volta!</Title>
-                <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[200] }}>
-                    {appConfig.name}
-                </Text>
+                <Title tag="h1">Bem vindo! Youkoso!</Title>
 
                 {/* <input 
                     type="text"
@@ -106,9 +102,9 @@ export default function PaginaInicial() {
                     textFieldColors={{
                         neutral: {
                             textColor: appConfig.theme.colors.neutrals[200],
-                            mainColor: appConfig.theme.colors.neutrals[900],
+                            mainColor: appConfig.theme.colors.primary[500],
                             mainColorHighlight: appConfig.theme.colors.primary[500],
-                            backgroundColor: appConfig.theme.colors.neutrals[800],
+                            backgroundColor: appConfig.theme.colors.primary[500],
                         },
                     }}
                 />
@@ -118,7 +114,7 @@ export default function PaginaInicial() {
                     fullWidth
                     buttonColors={{
                         contrastColor: appConfig.theme.colors.neutrals["000"],
-                        mainColor: appConfig.theme.colors.primary[600],
+                        mainColor: appConfig.theme.colors.primary[700],
                         mainColorLight: appConfig.theme.colors.primary[400],
                         mainColorStrong: appConfig.theme.colors.primary[700],
                     }}
@@ -135,9 +131,9 @@ export default function PaginaInicial() {
                     alignItems: 'center',
                     maxWidth: '200px',
                     padding: '16px',
-                    backgroundColor: appConfig.theme.colors.neutrals[800],
+                    backgroundColor: appConfig.theme.colors.primary[700],
                     border: '1px solid',
-                    borderColor: appConfig.theme.colors.neutrals[999],
+                    borderColor: appConfig.theme.colors.primary[700],
                     borderRadius: '10px',
                     flex: 1,
                     minHeight: '240px',
@@ -155,7 +151,7 @@ export default function PaginaInicial() {
                     variant="body4"
                     styleSheet={{
                         color: appConfig.theme.colors.neutrals[200],
-                        backgroundColor: appConfig.theme.colors.neutrals[900],
+                        backgroundColor: appConfig.theme.colors.primary[900],
                         padding: '3px 10px',
                         borderRadius: '1000px'
                     }}
