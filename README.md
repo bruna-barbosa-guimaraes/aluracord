@@ -1,2 +1,3 @@
 ## Projeto hospedado na Vercel
-https://aluracord-bruna.vercel.app/
+Link ➡️ https://alurakut-alura.vercel.app/login
+Login ➡️ utilizar seu usuário do Github
